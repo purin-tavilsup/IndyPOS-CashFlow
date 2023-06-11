@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndyPOS.CashFlow.Domain", "src\IndyPOS.Domain\IndyPOS.CashFlow.Domain.csproj", "{24F75591-02BA-4E92-834A-F330A60AF06A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndyPOS.CashFlow.Windows.Forms", "src\IndyPOS.Windows.Forms\IndyPOS.CashFlow.Windows.Forms.csproj", "{2ED6DFC3-BF73-41B7-816C-D53312DA9C52}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndyPOS.CashFlow.Infrastructure", "src\IndyPOS.Infrastructure\IndyPOS.CashFlow.Infrastructure.csproj", "{6032F51E-E3DF-47D5-9E74-A360BDBFB180}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndyPOS.CashFlow.Application", "src\IndyPOS.Application\IndyPOS.CashFlow.Application.csproj", "{672B4BDC-93D2-4711-9CB2-1DB66D57591D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{997D11A0-85EC-4363-90F7-52B709D4ED27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{87305E60-CCF3-46E7-9CD2-E19BF10290B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24F75591-02BA-4E92-834A-F330A60AF06A}.Debug|x64.ActiveCfg = Debug|x64
+		{24F75591-02BA-4E92-834A-F330A60AF06A}.Debug|x64.Build.0 = Debug|x64
+		{24F75591-02BA-4E92-834A-F330A60AF06A}.Release|x64.ActiveCfg = Release|x64
+		{24F75591-02BA-4E92-834A-F330A60AF06A}.Release|x64.Build.0 = Release|x64
+		{2ED6DFC3-BF73-41B7-816C-D53312DA9C52}.Debug|x64.ActiveCfg = Debug|x64
+		{2ED6DFC3-BF73-41B7-816C-D53312DA9C52}.Debug|x64.Build.0 = Debug|x64
+		{2ED6DFC3-BF73-41B7-816C-D53312DA9C52}.Release|x64.ActiveCfg = Release|x64
+		{2ED6DFC3-BF73-41B7-816C-D53312DA9C52}.Release|x64.Build.0 = Release|x64
+		{6032F51E-E3DF-47D5-9E74-A360BDBFB180}.Debug|x64.ActiveCfg = Debug|x64
+		{6032F51E-E3DF-47D5-9E74-A360BDBFB180}.Debug|x64.Build.0 = Debug|x64
+		{6032F51E-E3DF-47D5-9E74-A360BDBFB180}.Release|x64.ActiveCfg = Release|x64
+		{6032F51E-E3DF-47D5-9E74-A360BDBFB180}.Release|x64.Build.0 = Release|x64
+		{672B4BDC-93D2-4711-9CB2-1DB66D57591D}.Debug|x64.ActiveCfg = Debug|x64
+		{672B4BDC-93D2-4711-9CB2-1DB66D57591D}.Debug|x64.Build.0 = Debug|x64
+		{672B4BDC-93D2-4711-9CB2-1DB66D57591D}.Release|x64.ActiveCfg = Release|x64
+		{672B4BDC-93D2-4711-9CB2-1DB66D57591D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24F75591-02BA-4E92-834A-F330A60AF06A} = {997D11A0-85EC-4363-90F7-52B709D4ED27}
+		{2ED6DFC3-BF73-41B7-816C-D53312DA9C52} = {997D11A0-85EC-4363-90F7-52B709D4ED27}
+		{6032F51E-E3DF-47D5-9E74-A360BDBFB180} = {997D11A0-85EC-4363-90F7-52B709D4ED27}
+		{672B4BDC-93D2-4711-9CB2-1DB66D57591D} = {997D11A0-85EC-4363-90F7-52B709D4ED27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF2657F-A964-43CB-BD74-99381ADA31E6}
+	EndGlobalSection
+EndGlobal

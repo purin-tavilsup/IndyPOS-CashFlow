@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="Throw" Version="1.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IndyPOS.Domain\IndyPOS.CashFlow.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InventoryProducts\Commands\" />
+    <Folder Include="InvoicePayments\Commands\" />
+    <Folder Include="InvoicePayments\Queries\GetInvoicePaymentsByInvoiceId\" />
+    <Folder Include="InvoicePayments\Queries\GetInvoicePaymentsByDate\" />
+    <Folder Include="InvoicePayments\Queries\GetInvoicePaymentsByDateRange\" />
+    <Folder Include="InvoicePayments\Queries\GetInvoicePaymentsByPaymentTypeId\" />
+    <Folder Include="InvoiceProducts\Commands\" />
+    <Folder Include="InvoiceProducts\Queries\GetInvoiceProductsByInvoiceId\" />
+    <Folder Include="InvoiceProducts\Queries\GetInvoiceProductsByDate\" />
+    <Folder Include="InvoiceProducts\Queries\GetInvoiceProductsByDateRange\" />
+    <Folder Include="Invoices\Commands\" />
+    <Folder Include="Invoices\Queries\GetInvoiceById\" />
+    <Folder Include="Invoices\Queries\GetInvoicesByDate\" />
+    <Folder Include="Invoices\Queries\GetInvoicesByDateRange\" />
+    <Folder Include="PayLaterPayments\Commands\" />
+    <Folder Include="PayLaterPayments\Queries\GetPayLaterPayments\" />
+    <Folder Include="PayLaterPayments\Queries\GetPayLaterPaymentByInvoiceId\" />
+    <Folder Include="PayLaterPayments\Queries\GetPayLaterPaymentById\" />
+    <Folder Include="PayLaterPayments\Queries\GetPayLaterPaymentsByDateRange\" />
+    <Folder Include="UserCredentials\Commands\" />
+    <Folder Include="UserCredentials\Queries\GetUserCredentialById\" />
+    <Folder Include="UserCredentials\Queries\GetUserCredentialByUsername\" />
+    <Folder Include="Users\Commands\" />
+    <Folder Include="Users\Queries\GetUsers\" />
+    <Folder Include="Users\Queries\GetUserById\" />
+  </ItemGroup>
+</Project>
