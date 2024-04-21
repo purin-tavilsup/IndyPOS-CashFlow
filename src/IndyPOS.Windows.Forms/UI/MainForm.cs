@@ -303,9 +303,9 @@ public partial class MainForm : Form
 					   + data.BankNote50Total
 					   + data.BankNote20Total
 					   + data.Coin10Total
-					   + data.Coin5Count
-					   + data.Coin2Count
-					   + data.Coin1Count;
+					   + data.Coin5Total
+					   + data.Coin2Total
+					   + data.Coin1Total;
 
         return actualCash;
     }
